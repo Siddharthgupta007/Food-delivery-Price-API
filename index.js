@@ -95,7 +95,7 @@ sequelize.sync()
 //     console.error('Error creating organization:', error);
 //   });
 
-// Create a single item
+// //Create a single item
 // Item.create({ type: 'perishable', description: 'Perishable Item' })
 //   .then((item) => {
 //     console.log('Item created:', item.toJSON());
@@ -104,7 +104,14 @@ sequelize.sync()
 //     console.error('Error creating item:', error);
 //   });
 
-// Create a single pricing
+// //Create a single pricing
+// Pricing.create({ organizationId: 1, itemId: 1, zone: 'Central', baseDistanceInKm: 5, kmPrice:1.5 , fixPrice: 10 })
+//   .then((pricing) => {
+//     console.log('Pricing created:', pricing.toJSON());
+//   })
+//   .catch((error) => {
+//     console.error('Error creating pricing:', error);
+//   });
 // Pricing.create({ organizationId: 2, itemId: 2, zone: 'North', baseDistanceInKm: 4, kmPrice: 2, fixPrice: 15 })
 //   .then((pricing) => {
 //     console.log('Pricing created:', pricing.toJSON());
