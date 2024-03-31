@@ -30,15 +30,19 @@ app.use(bodyParser.json());
  *             zone:
  *               type: string
  *               description: The zone for food delivery (central/North/South/West/East)
+ *               default: Central
  *             organization_id:
  *               type: string
  *               description: The ID of the organization(01,02,03)
+ *               default: 005
  *             total_distance:
  *               type: number
  *               description: The total distance for food delivery(10,20,30)
+ *               default: 10
  *             item_type:
  *               type: string
  *               description: The type of food item (e.g., perishable, non-perishable)
+ *               default: perishable
  *     responses:
  *       200:
  *         description: Success 
